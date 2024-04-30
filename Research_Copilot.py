@@ -112,7 +112,7 @@ async def display_form3():
     if submit3:
         question = f"For the course {course} and the research area {selected_option}, give me 3 research problems.  Provide the title, abstract and research objectives for each research problem."
         if question:
-            progress_bar = form3.progress(0, text="The AI teacher co-pilot is processing the request, please wait...")
+            progress_bar = form3.progress(0, text="The AI research co-pilot is processing the request, please wait...")
             response = await generate_response(question, context)
             form3.write("Response:")
             form3.write(response)
