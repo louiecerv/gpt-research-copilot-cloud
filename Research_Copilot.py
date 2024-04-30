@@ -7,7 +7,7 @@ import os
 import time
 
 client = AsyncOpenAI(  
-    api_key=st.secrets("API_key"),
+    api_key=st.secrets["API_key"],
 )
 
 context = """You are a research co-pilot designed to assist students in finding reaarch 
